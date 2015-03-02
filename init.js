@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$dl.find("h3").click(function(){
 		$(this).next().addClass(".clicked");
 		var $other = $dl.find("h3").next().not(".clicked");
-		//$other.slideUp();
+		$other.slideUp();
 		$(this).next().slideToggle();
 		$(this).next().removeClass(".clicked");
 	});
