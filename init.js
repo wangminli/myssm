@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	var $dl = $("#dl");	
+	var $dl = $("h1").next().find("dl").first().attr("id", "dl");
+//	var $dl = $("#dl");	
 	$dl.find("h3").next().hide();
 	$dl.find("h3").click(function(){
 		var that = this;
