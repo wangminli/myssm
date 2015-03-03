@@ -11,4 +11,6 @@ $(document).ready(function(){
 		});
 		$(this).next().slideToggle();
 	});
+	//为<a>添加target=blank
+	$("a").attr("target", "_blank");
 });
