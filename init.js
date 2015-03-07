@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("h3").css("background-color","green");
 	var $dl = $("h1").next().find("dl").first().attr("id", "dl");
 //	var $dl = $("#dl");	
 	$dl.find("h3").next().hide();
@@ -13,4 +14,11 @@ $(document).ready(function(){
 	});
 	//为<a>添加target=blank
 	$("a").attr("target", "_blank");
+	//
+	$("h3").mouseout(function(){
+			$(this).css("background-color","red");
+	});
+	$("h3").mouseover(function(){
+			$(this).css("background-color","green");
+	});
 });
