@@ -2,7 +2,6 @@ package com.youmeek.ssm.manage.controller;
 
 
 import com.youmeek.ssm.manage.mapper.SysExceptionLogMapper;
-import com.youmeek.ssm.manage.pojo.SysExceptionLog;
 import com.youmeek.ssm.manage.pojo.SysUser;
 import com.youmeek.ssm.manage.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +26,12 @@ public class SysUserController {
 		SysUser user = this.sysUserService.getById(userId);
 		model.addAttribute("user", user);
 
-		try {
+		/*try {
 			int i = 1/0;
 		} catch (Exception e) {
 			sysExceptionLogMapper.insert(new SysExceptionLog(e));
 			e.printStackTrace();
-		}
+		}*/
 
 		return "showUser";
 	}

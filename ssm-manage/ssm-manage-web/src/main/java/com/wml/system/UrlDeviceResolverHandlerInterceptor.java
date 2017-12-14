@@ -1,4 +1,4 @@
-package com.system;
+package com.wml.system;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +7,7 @@ import org.springframework.mobile.device.DeviceResolverHandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
+/** 拦截器
  * Created by user on 2017/12/14.
  */
 public class UrlDeviceResolverHandlerInterceptor extends DeviceResolverHandlerInterceptor {

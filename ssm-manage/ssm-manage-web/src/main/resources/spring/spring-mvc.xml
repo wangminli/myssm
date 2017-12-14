@@ -36,7 +36,7 @@
             <mvc:exclude-mapping path="/**/*.gif"/>
             <mvc:exclude-mapping path="/**/*.jpg"/>
             <mvc:exclude-mapping path="/**/*.jpeg"/>
-            <bean class="com.system.UrlDeviceResolverHandlerInterceptor"></bean>
+            <bean class="com.wml.system.UrlDeviceResolverHandlerInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
     <!-- 拦截器配置文件 end  -from cashloan-->
