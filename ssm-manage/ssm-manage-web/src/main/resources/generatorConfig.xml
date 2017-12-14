@@ -20,7 +20,7 @@
 
         <commentGenerator>
             <property name="suppressAllComments" value="false"/>
-            <property name="suppressDate" value="true"/>
+            <property name="suppressDate" value="false"/>
         </commentGenerator>
 
         <!--添加你的 JDBC 连接信息-->
@@ -38,7 +38,7 @@
         </javaModelGenerator>
 
         <!--要生成的 Mapper.xml 文件位置-->
-        <sqlMapGenerator targetPackage="com.youmeek.ssm.manage.mapper" targetProject="F:\Basic-Multi-Module-SSM-master\ssm-manage\ssm-manage-dao\src\main\java">
+        <sqlMapGenerator targetPackage="mapper" targetProject="F:\Basic-Multi-Module-SSM-master\ssm-manage\ssm-manage-web\src\main\resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -51,7 +51,7 @@
 
         <!--要根据哪张表生成，要在这里配置-->
         <!--用百分号表示生成所有表,可以直接省去一个一个写 <table tableName="%" /> -->
-        <table tableName="cash_user" enableCountByExample="false" enableDeleteByExample="false"
+        <table tableName="sys_exception_log" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
 
 
