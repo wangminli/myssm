@@ -72,7 +72,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
         </dependency>
-
+        <!-- 添加spring mvc 拦截器组件 start。 - from cashloan-->
+        <dependency>
+            <groupId>org.springframework.mobile</groupId>
+            <artifactId>spring-mobile-device</artifactId>
+            <version>1.1.3.RELEASE</version>
+        </dependency>
+        <!-- 添加spring mvc 拦截器组件 end。 - from cashloan-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
@@ -87,7 +93,6 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
         </dependency>
-
     </dependencies>
 
 </project>

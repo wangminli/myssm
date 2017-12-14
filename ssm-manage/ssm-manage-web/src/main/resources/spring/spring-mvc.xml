@@ -18,6 +18,29 @@
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven/>
 
+    <!-- 拦截器配置文件 start  -from cashloan-->
+    <mvc:annotation-driven>
+        <mvc:argument-resolvers>
+            <bean class="org.springframework.mobile.device.DeviceWebArgumentResolver"/>
+            <bean class="org.springframework.mobile.device.site.SitePreferenceHandlerMethodArgumentResolver"/>
+        </mvc:argument-resolvers>
+    </mvc:annotation-driven>
+    <mvc:interceptors>
+        <bean class="org.springframework.mobile.device.DeviceResolverHandlerInterceptor" />
+        <bean class="org.springframework.mobile.device.site.SitePreferenceHandlerInterceptor" />
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/**/*.css"/>
+            <mvc:exclude-mapping path="/**/*.js"/>
+            <mvc:exclude-mapping path="/**/*.png"/>
+            <mvc:exclude-mapping path="/**/*.gif"/>
+            <mvc:exclude-mapping path="/**/*.jpg"/>
+            <mvc:exclude-mapping path="/**/*.jpeg"/>
+            <bean class="com.system.UrlDeviceResolverHandlerInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    <!-- 拦截器配置文件 end  -from cashloan-->
+
     <!--静态资源映射-->
     <!--
     http://perfy315.iteye.com/blog/2008763

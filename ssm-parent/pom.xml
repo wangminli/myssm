@@ -189,6 +189,13 @@
                 <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!-- 添加spring mvc 拦截器组件 start。 - from cashloan-->
+            <!--<dependency>
+                <groupId>org.springframework.mobile</groupId>
+                <artifactId>spring-mobile-device</artifactId>
+                <version>${spring.version}</version>
+            </dependency>-->
+            <!-- 添加spring mvc 拦截器组件 end。 - from cashloan-->
 
             <!--下面两个提供对 AspectJ 的支持，是 spring-aspects 所需要依赖的-->
             <dependency>
@@ -202,7 +209,6 @@
                 <artifactId>persistence-api</artifactId>
                 <version>${persistence-api.version}</version>
             </dependency>
-
             <!-- ############################################################### Spring 相关包 end ############################################################### -->
 
 

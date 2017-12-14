@@ -24,7 +24,7 @@
         </commentGenerator>
 
         <!--添加你的 JDBC 连接信息-->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.100.200.107:3307/cashloan"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/ssm"
                         userId="root" password="123456"/>
 
         <javaTypeResolver>
