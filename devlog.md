@@ -16,3 +16,4 @@
 - [ ] activiti 工作流管理
 - [ ] mybatis 分页插件的使用
 - [ ] 使用规范的controller返回方式，可以参照《阿里巴巴Java技术规范》
+- [ ] 将httpClient加入项目中
