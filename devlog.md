@@ -17,3 +17,6 @@
 - [ ] mybatis 分页插件的使用
 - [ ] 使用规范的controller返回方式，可以参照《阿里巴巴Java技术规范》
 - [ ] 将httpClient加入项目中
+- [ ] 处理mybatis分页tag，学习mybatis分页功能
+- [ ] 将youmeek的所有标签出掉，调整结构
+

@@ -7,7 +7,7 @@ import org.springframework.mobile.device.DeviceResolverHandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/** 拦截器
+/** Url拦截器，可以对每次的访问进行拦截，可用在权限管理方面
  * Created by user on 2017/12/14.
  */
 public class UrlDeviceResolverHandlerInterceptor extends DeviceResolverHandlerInterceptor {

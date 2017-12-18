@@ -3,6 +3,7 @@ package com.youmeek.ssm.manage.controller;
 
 import com.youmeek.ssm.manage.mapper.SysExceptionLogMapper;
 import com.youmeek.ssm.manage.pojo.SysUser;
+import com.youmeek.ssm.manage.service.MqService;
 import com.youmeek.ssm.manage.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,8 @@ public class SysUserController {
 	private SysUserService sysUserService;
 	@Autowired
 	private SysExceptionLogMapper sysExceptionLogMapper;
+    @Autowired
+    MqService mqService;
 
 	@RequestMapping("/showUserToJspById/{userId}")
 	public String showUser(Model model, @PathVariable("userId") Long userId){
@@ -42,9 +45,4 @@ public class SysUserController {
 		SysUser user = sysUserService.getById(userId);
 		return user;
 	}
-	
-	
-
-
-
 }
