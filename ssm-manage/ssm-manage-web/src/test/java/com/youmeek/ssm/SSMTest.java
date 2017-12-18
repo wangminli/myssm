@@ -1,7 +1,7 @@
 package com.youmeek.ssm;
 
-import com.youmeek.ssm.manage.pojo.SysUser;
-import com.youmeek.ssm.manage.service.SysUserService;
+import com.wml.ssm.manage.pojo.SysUser;
+import com.wml.ssm.manage.service.SysUserService;
 import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;

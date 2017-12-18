@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.youmeek.parent</groupId>
+    <groupId>com.wml.parent</groupId>
     <artifactId>ssm-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <!--父级项目一般都是用pom来子项目依赖,一般软件的版本号/插件/都在这里进行定义,统一做管理-->
@@ -13,7 +13,7 @@
     <description>
         一个简单SpringMVC+Spring+Mybatis整理项目
     </description>
-    <url>http://code.YouMeek.com/</url>
+    <url>http://code.wml.com/</url>
 
 
     <!-- 集中定义公用的依赖版本号 -->

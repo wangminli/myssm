@@ -6,7 +6,7 @@
 
 	<!-- ================测试 start=============== -->
 	<bean name="someQuartzTask" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
-		<property name="jobClass" value="com.youmeek.ssm.manage.service.SomeQuartzTask" />
+		<property name="jobClass" value="com.wml.ssm.manage.service.SomeQuartzTask" />
 		<property name="durability" value="true" />
 	</bean>
 	<bean id="someQuartzJob" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">

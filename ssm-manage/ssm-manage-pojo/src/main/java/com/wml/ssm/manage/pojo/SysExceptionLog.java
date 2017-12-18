@@ -1,4 +1,4 @@
-package com.youmeek.ssm.manage.pojo;
+package com.wml.ssm.manage.pojo;
 
 import org.apache.commons.lang3.StringUtils;
 

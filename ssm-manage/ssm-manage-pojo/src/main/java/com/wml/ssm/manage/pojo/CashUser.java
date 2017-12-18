@@ -1,4 +1,4 @@
-package com.youmeek.ssm.manage.pojo;
+package com.wml.ssm.manage.pojo;
 
 import java.math.BigDecimal;
 import java.util.Date;

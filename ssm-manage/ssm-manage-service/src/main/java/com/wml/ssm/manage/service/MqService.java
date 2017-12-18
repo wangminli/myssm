@@ -1,4 +1,4 @@
-package com.youmeek.ssm.manage.service;
+package com.wml.ssm.manage.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.JmsException;

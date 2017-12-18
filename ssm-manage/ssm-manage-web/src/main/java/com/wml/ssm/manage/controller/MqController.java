@@ -1,6 +1,6 @@
-package com.youmeek.ssm.manage.controller;
+package com.wml.ssm.manage.controller;
 
-import com.youmeek.ssm.manage.service.MqService;
+import com.wml.ssm.manage.service.MqService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

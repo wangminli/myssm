@@ -1,6 +1,6 @@
-package com.youmeek.ssm.manage.mapper;
+package com.wml.ssm.manage.mapper;
 
-import com.youmeek.ssm.manage.pojo.SysExceptionLog;
+import com.wml.ssm.manage.pojo.SysExceptionLog;
 
 public interface SysExceptionLogMapper {
     /**

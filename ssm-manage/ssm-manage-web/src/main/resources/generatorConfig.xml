@@ -32,7 +32,7 @@
         </javaTypeResolver>
 
         <!--要生成的 domain 模块位置-->
-        <javaModelGenerator targetPackage="com.youmeek.ssm.manage.pojo" targetProject="F:\Basic-Multi-Module-SSM-master\ssm-manage\ssm-manage-pojo\src\main\java">
+        <javaModelGenerator targetPackage="com.wml.ssm.manage.pojo" targetProject="F:\Basic-Multi-Module-SSM-master\ssm-manage\ssm-manage-pojo\src\main\java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -43,7 +43,7 @@
         </sqlMapGenerator>
 
         <!--要生成的 Mapper 接口类-->
-        <javaClientGenerator targetPackage="com.youmeek.ssm.manage.mapper" targetProject="F:\Basic-Multi-Module-SSM-master\ssm-manage\ssm-manage-dao\src\main\java"
+        <javaClientGenerator targetPackage="com.wml.ssm.manage.mapper" targetProject="F:\Basic-Multi-Module-SSM-master\ssm-manage\ssm-manage-dao\src\main\java"
                              type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>

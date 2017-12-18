@@ -1,10 +1,10 @@
-package com.youmeek.ssm.manage.controller;
+package com.wml.ssm.manage.controller;
 
 
-import com.youmeek.ssm.manage.mapper.SysExceptionLogMapper;
-import com.youmeek.ssm.manage.pojo.SysUser;
-import com.youmeek.ssm.manage.service.MqService;
-import com.youmeek.ssm.manage.service.SysUserService;
+import com.wml.ssm.manage.mapper.SysExceptionLogMapper;
+import com.wml.ssm.manage.pojo.SysUser;
+import com.wml.ssm.manage.service.MqService;
+import com.wml.ssm.manage.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

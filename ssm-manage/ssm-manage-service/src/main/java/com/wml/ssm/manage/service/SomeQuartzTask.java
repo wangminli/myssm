@@ -1,4 +1,4 @@
-package com.youmeek.ssm.manage.service;
+package com.wml.ssm.manage.service;
 
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;

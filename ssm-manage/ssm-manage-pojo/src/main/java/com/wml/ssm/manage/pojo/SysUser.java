@@ -1,4 +1,4 @@
-package com.youmeek.ssm.manage.pojo;
+package com.wml.ssm.manage.pojo;
 
 import java.util.Date;
 
