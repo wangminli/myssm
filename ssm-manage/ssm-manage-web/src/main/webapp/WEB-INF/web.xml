@@ -24,7 +24,10 @@
     <listener>
         <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
     </listener>
-
+    <!-- 自定义启动器，启动时需要跟随启动的项可以在该类中配置 -->
+    <listener>
+        <listener-class>com.wml.system.StartupListener</listener-class>
+    </listener>
     <!-- 配置SESSION超时，单位是分钟 -->
     <session-config>
         <session-timeout>15</session-timeout>

@@ -29,8 +29,8 @@ public class SSMTest {
 
 	@Test
 	public void test1() {
-	/*	SysUser sysUser = sysUserService.getById(1L);
-		logger.info("--------------------------------" + sysUser.toString());*/
+		SysUser sysUser = sysUserService.getById(1L);
+		logger.info("--------------------------------" + sysUser.toString());
 		System.out.println("hello world. ");
 	}
 
