@@ -17,6 +17,12 @@
 - [ ] mybatis 分页插件的使用
 - [ ] 使用规范的controller返回方式，可以参照《阿里巴巴Java技术规范》
 - [ ] 将httpClient加入项目中
-- [ ] 处理mybatis分页tag，学习mybatis分页功能
-- [ ] 将youmeek的所有标签出掉，调整结构
+- [x] [处理mybatis分页tag，学习mybatisHelper分页功能](http://blog.csdn.net/isea533/article/details/28921533)
+- [x] 出掉所有标签，调整结构
+- [ ] 多数据源的支持
 
+
+---
+
+- 分页插件
+经测试，分页插件自动为你的sql添加limit条件，也就是说，使用方法select**list并不会查出所有的大list对象，这正是我期望看到的！

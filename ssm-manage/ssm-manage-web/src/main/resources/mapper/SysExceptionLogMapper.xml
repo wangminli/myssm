@@ -143,4 +143,7 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="getExceptionList" resultMap="BaseResultMap">
+    select * from sys_exception_log
+  </select>
 </mapper>

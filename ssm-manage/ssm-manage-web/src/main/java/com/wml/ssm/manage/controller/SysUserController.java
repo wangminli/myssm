@@ -2,6 +2,7 @@ package com.wml.ssm.manage.controller;
 
 
 import com.wml.ssm.manage.mapper.SysExceptionLogMapper;
+import com.wml.ssm.manage.pojo.SysExceptionLog;
 import com.wml.ssm.manage.pojo.SysUser;
 import com.wml.ssm.manage.service.MqService;
 import com.wml.ssm.manage.service.SysUserService;
@@ -29,12 +30,12 @@ public class SysUserController {
 		SysUser user = this.sysUserService.getById(userId);
 		model.addAttribute("user", user);
 
-		/*try {
+		try {
 			int i = 1/0;
 		} catch (Exception e) {
 			sysExceptionLogMapper.insert(new SysExceptionLog(e));
 			e.printStackTrace();
-		}*/
+		}
 
 		return "showUser";
 	}
