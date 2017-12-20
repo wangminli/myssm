@@ -106,6 +106,10 @@
             <artifactId>mail</artifactId>
             <version>1.4</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
         <!--为ChineseUtil工具类提供-->
         <!--maven setting.xml的原因导致无法引入，可以使用jar-->
         <!--<dependency>

@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 
 /**
  * 一些中文相关的操作方法
+ * 注意：根据公司引入的maven setting.xml配置不同，引入可能失败，可以引入第三方jar的形式导入
  */
 public final class ChineseUtil {
     private ChineseUtil(){
