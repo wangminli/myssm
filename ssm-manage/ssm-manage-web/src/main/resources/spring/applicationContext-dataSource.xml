@@ -29,7 +29,7 @@ http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
     <!-- 使用阿里的druid配置数据源 start-->
     <!--具体查看官网信息：https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_DruidDataSource%E5%8F%82%E8%80%83%E9%85%8D%E7%BD%AE-->
-    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+    <bean id="localDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!--这三个变量读取config.properties的-->
         <property name="url" value="${data_source_url}"/>
         <property name="username" value="${data_source_username}"/>
@@ -81,6 +81,41 @@ http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
         <property name="filters" value="stat,log4j"/>
     </bean>
     <!-- 使用阿里的druid配置数据源 end-->
+
+    <!--这里配置的是开发库数据源-->
+    <bean id="ds_cashloan" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <!--这三个变量读取config.properties的-->
+        <property name="url" value="${ds_cashloan_url}"/>
+        <property name="username" value="${ds_cashloan_username}"/>
+        <property name="password" value="${ds_cashloan_password}"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxActive" value="20"/>
+        <property name="minIdle" value="1"/>
+        <property name="maxWait" value="60000"/>
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="25200000"/>
+        <property name="poolPreparedStatements" value="false" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+        <property name="removeAbandoned" value="true"/>
+        <property name="removeAbandonedTimeout" value="1800"/>
+        <property name="logAbandoned" value="true"/>
+        <property name="filters" value="stat,log4j"/>
+    </bean>
+    <!--多数据源配置-->
+    <!--需要借助ThreadLocal实现-->
+    <!--http://blog.csdn.net/reggergdsg/article/details/50488333-->
+    <bean id="dataSource" class="com.wml.system.DynamicDataSource">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry value-ref="localDataSource" key="localDataSource"></entry>
+                <entry value-ref="ds_cashloan" key="ds_cashloan"></entry>
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="localDataSource"></property>
+    </bean>
 
 
 </beans>

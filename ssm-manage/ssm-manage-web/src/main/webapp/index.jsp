@@ -22,11 +22,15 @@
 <a href="/sysUserController/showUserToJspById/1" target="_blank">查询用户信息并跳转到一个JSP页面</a>
 
 <br>
+<a href="/sysUserController/testDynamicDataSource" target="_blank">多数据源测试，查询贷款表数据库</a>
+
+<br>
 
 <a href="/sysUserController/showUserToJSONById/1" target="_blank">查询用户信息并直接输出JSON数据</a>
 <%--推送信息--%>
 <a href="/mq/sendMq" target="_blank">发送mq消息</a><br>
 <a href="/mq/receiveMq" target="_blank">接收mq消息</a><br>
+<a href="/exception/setExceptionList" target="_blank">制造一个异常</a><br>
 <a href="/exception/getExceptionList" target="_blank">异常页显示</a><br>
 
 </body>

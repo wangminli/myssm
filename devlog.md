@@ -10,7 +10,7 @@
 - [x] 添加activeMq消息队列,并支持分布式
 - [x] 添加quartz，并支持分布式
 - [ ] 添加用户和权限模块
-- [ ] 多数据源配置
+- [ ] 多数据源配置，需要使用ThreadLocal的知识
 - [ ] excel 数据表导出功能
 - [ ] shiro 权限管理
 - [ ] activiti 工作流管理
@@ -21,7 +21,8 @@
 - [x] 出掉所有标签，调整结构
 - [ ] 多数据源的支持
 - [x] 添加myBatis Generator支持
-- [ ] 使用AOP技术打印日志信息
+- [ ] [使用AOP技术打印日志信息](http://blog.didispace.com/cxy-wsm-zml-3/)
+- [ ]
 
 
 ---

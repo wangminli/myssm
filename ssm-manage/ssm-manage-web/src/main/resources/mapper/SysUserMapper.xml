@@ -292,4 +292,9 @@
       `sys_user_qq_id` = #{sysUserQqId,jdbcType=VARCHAR}
     where `sys_user_id` = #{sysUserId,jdbcType=BIGINT}
   </update>
+  <select id="getCashLoanUser"  resultType="java.util.Map">
+    select * from cash_user;
+  </select>
+
+
 </mapper>

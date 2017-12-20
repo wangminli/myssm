@@ -2,6 +2,7 @@ package com.wml.ssm.manage.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.wml.ssm.manage.mapper.SysExceptionLogMapper;
 import com.wml.ssm.manage.pojo.SysExceptionLog;
 import com.wml.ssm.manage.service.ExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,19 @@ import java.util.List;
 public class ExceptionController {
     @Autowired
     ExceptionService exceptionService;
+    @Autowired
+    private SysExceptionLogMapper sysExceptionLogMapper;
 
+    @RequestMapping("/setExceptionList")
+    public String  setList(){
+        try {
+            int i = 1/0;
+        } catch (Exception e) {
+            sysExceptionLogMapper.insert(new SysExceptionLog(e));
+            e.printStackTrace();
+        }
+        return "exceptionList";
+    }
     @RequestMapping("/getExceptionList")
     public String  getList(){
         PageHelper.startPage(2,10);
