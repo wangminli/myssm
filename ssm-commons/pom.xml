@@ -78,6 +78,45 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+
+        <!--引入第三方Util所需的依赖：https://github.com/0opslab/opslabJutil  start-->
+        <!--为FTPUtilImpl工具类添加-->
+        <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.3</version>
+        </dependency>
+        <!--为UrlUtil工具类提供-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+        <!--为FileIpml工具类提供-->
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.jchardet/jchardet -->
+        <dependency>
+            <groupId>net.sourceforge.jchardet</groupId>
+            <artifactId>jchardet</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!--为MailUtil工具类提供-->
+        <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <!--为ChineseUtil工具类提供-->
+        <!--maven setting.xml的原因导致无法引入，可以使用jar-->
+        <!--<dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>2.5.1</version>
+        </dependency>-->
+        <!--引入第三方Util所需的依赖：https://github.com/0opslab/opslabJutil  end-->
+
+
+
     </dependencies>
 
 
