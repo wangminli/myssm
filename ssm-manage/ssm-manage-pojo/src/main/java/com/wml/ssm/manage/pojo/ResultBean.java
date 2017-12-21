@@ -16,6 +16,8 @@ public class ResultBean<T> implements Serializable {
 
     public static final int NO_PERMISSION = 2;
 
+    public static final int NO_LOGIN = 3;
+
     private String msg = "success";
 
     private int code = SUCCESS;
@@ -59,5 +61,21 @@ public class ResultBean<T> implements Serializable {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public static int getSUCCESS() {
+        return SUCCESS;
+    }
+
+    public static int getFAIL() {
+        return FAIL;
+    }
+
+    public static int getNoPermission() {
+        return NO_PERMISSION;
     }
 }
