@@ -1,6 +1,7 @@
 package com.wml.ssm.manage.controller;
 
 
+import com.wml.ssm.manage.pojo.ResultBean;
 import com.wml.ssm.manage.pojo.SysUser;
 import com.wml.ssm.manage.service.MqService;
 import com.wml.ssm.manage.service.SysUserService;
@@ -43,5 +44,17 @@ public class SysUserController {
 		DynamicDataSource.setCustomerType(DynamicDataSource.DS_CASHLOAN);
 		List<Map> userList = sysUserService.getCashLoanUser();
 		return userList;
+	}
+
+    /**
+     * 测试ResultBean
+     * @return
+     */
+	@RequestMapping("/testResultBean")
+	@ResponseBody
+	public ResultBean<List<Map>> testResultBean(){
+		DynamicDataSource.setCustomerType(DynamicDataSource.DS_CASHLOAN);
+		List<Map> userList = sysUserService.getCashLoanUser();
+		return new ResultBean<List<Map>>(userList);
 	}
 }

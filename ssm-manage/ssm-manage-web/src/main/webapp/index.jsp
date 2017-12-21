@@ -23,7 +23,8 @@
 
 <br>
 <a href="/sysUserController/testDynamicDataSource" target="_blank">多数据源测试，查询贷款表数据库</a>
-
+<br>
+<a href="/sysUserController/testResultBean" target="_blank">测试ResultBean</a>
 <br>
 
 <a href="/sysUserController/showUserToJSONById/1" target="_blank">查询用户信息并直接输出JSON数据</a>

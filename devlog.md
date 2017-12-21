@@ -17,7 +17,7 @@
 - [x] [mybatis 分页插件的使用](http://blog.csdn.net/isea533/article/details/28921533)
 - [ ] 使用规范的controller返回方式，可以参照《阿里巴巴Java技术规范》
 - [x] 将httpClient加入项目中
-- [x] [处理mybatis分页tag，使用mybatisHelper分页功能
+- [x] 自定义分页tag
 - [x] 出掉所有标签，调整结构
 - [ ] [使用AOP技术打印日志信息](http://blog.didispace.com/cxy-wsm-zml-3/)
 - [ ] 支持上传图片等文件到项目（或数据库、文件系统）
@@ -26,7 +26,7 @@
 - [ ] 支持redis缓存分布式
 - [ ] 尽量使用RESTful API的服务接口
 - [ ] 添加base64加密
-- [ ] 使用设计模式代替多条件查询
+- [ ] 使用设计模式代替条件判断（状态模式/策略模式）
 
 ---
 
