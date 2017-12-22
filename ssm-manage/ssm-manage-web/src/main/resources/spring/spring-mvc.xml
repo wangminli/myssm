@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:beans="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans  
                         http://www.springframework.org/schema/beans/spring-beans-3.2.xsd  
                         http://www.springframework.org/schema/context  
                         http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/mvc 
-                        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+                        http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
     <!--上面的xsd最好和当前使用的Spring版本号一致,如果换了Spring版本,这个最好也跟着改-->
@@ -73,4 +75,19 @@
     </bean>
     <!--文件上传 end-->
 
+    <!--aop config  start-->
+    <!--aop必须在springmvc中配置，在spring配置是不生效的：http://blog.csdn.net/tianjun2012/article/details/47809739-->
+    <aop:aspectj-autoproxy /><!--启用aspectj-->
+    <beans:bean id="controllerAop" class="com.wml.system.ControllerAOP" />
+
+    <aop:config>
+        <aop:aspect id="myAop" ref="controllerAop">
+            <aop:pointcut id="target"
+                          expression="execution(public com.wml.ssm.manage.pojo.ResultBean *(..))" />
+            <!-- <aop:before method="checkValidity" pointcut-ref="target" /> <aop:after
+                method="addLog" pointcut-ref="target" /> -->
+            <aop:around method="handlerControllerMethod" pointcut-ref="target" />
+        </aop:aspect>
+    </aop:config>
+    <!--aop config  end-->
 </beans>

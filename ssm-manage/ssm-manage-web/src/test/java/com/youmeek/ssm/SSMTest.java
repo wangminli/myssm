@@ -33,6 +33,12 @@ public class SSMTest {
 		logger.info("--------------------------------" + sysUser.toString());
 		System.out.println("hello world. ");
 	}
+	@Test
+	public void testStr() {
+		String  s = null;
+		s = s + "!";
+		System.out.println(s);
+	}
 
 	public static void main(String args[]){
 		CloseableHttpClient httpClient = HttpClients.createDefault();

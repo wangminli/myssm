@@ -20,6 +20,9 @@ import java.util.Map;
 @Controller
 @RequestMapping("/sysUserController")
 public class SysUserController {
+    static {
+        System.out.println("===sysUserController===");
+    }
 	@Resource
 	private SysUserService sysUserService;
     @Autowired
@@ -52,9 +55,12 @@ public class SysUserController {
      */
 	@RequestMapping("/testResultBean")
 	@ResponseBody
-	public ResultBean<List<Map>> testResultBean(){
+	public ResultBean testResultBean(){
 		DynamicDataSource.setCustomerType(DynamicDataSource.DS_CASHLOAN);
 		List<Map> userList = sysUserService.getCashLoanUser();
-		return new ResultBean<List<Map>>(userList);
+		int i = 1/0 ;
+
+
+		return new ResultBean(userList);
 	}
 }
