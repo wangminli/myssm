@@ -29,6 +29,7 @@
 - [ ] 使用设计模式代替条件判断（状态模式/策略模式）
 - [ ] [使用注解](http://www.jasongj.com/2016/01/17/Java1_%E6%B3%A8%E8%A7%A3Annotation/)
 - [ ] 使用java.lang.Objects来控制NPE异常
+- [ ] 使用ThreadPoolExecutor
 
 ---
 
