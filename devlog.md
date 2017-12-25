@@ -22,11 +22,14 @@
 - [x] [使用AOP技术打印日志信息](http://blog.didispace.com/cxy-wsm-zml-3/)
 - [ ] 支持上传图片等文件到项目（或数据库、文件系统）
 - [ ] 下载pdf等功能
-- [ ] 支持Dubbo分布式框架z
+- [ ] 支持Dubbo分布式框架
 - [ ] 支持redis缓存分布式
 - [ ] 尽量使用RESTful API的服务接口
 - [ ] 添加base64加密
 - [ ] 使用设计模式代替条件判断（状态模式/策略模式）
+- [ ] [使用注解](http://www.jasongj.com/2016/01/17/Java1_%E6%B3%A8%E8%A7%A3Annotation/)
+- [ ] 使用java.lang.Objects来控制NPE异常
+- [ ] 使用ThreadPoolExecutor
 - [x] 参照[《编写 Spring 配置文件的13个最佳实践》](https://dev-cheats.com/java/best-practices-for-writing-spring-configuration-files.html)
 - [ ] 测试[NIO](http://ifeve.com/java-nio-all/)
 - [ ] 将 Evernote 中的常用组件迁移到项目中来
