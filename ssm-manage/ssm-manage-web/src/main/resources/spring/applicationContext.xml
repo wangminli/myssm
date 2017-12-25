@@ -14,7 +14,7 @@ http://www.springframework.org/schema/context/spring-context-3.2.xsd">
     <!--
     引入属性文件也可以用这种写法
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:config.properties" />
+        <property name="location" value="classpath:jdbc.properties" />
     </bean>
     -->
 

@@ -50,7 +50,7 @@ public class SysUserController {
 	}
 
     /**
-     * 测试ResultBean
+     * 测试ResultBean,建议返回ResultBean的形式
      * @return
      */
 	@RequestMapping("/testResultBean")
@@ -58,8 +58,6 @@ public class SysUserController {
 	public ResultBean testResultBean(){
 		DynamicDataSource.setCustomerType(DynamicDataSource.DS_CASHLOAN);
 		List<Map> userList = sysUserService.getCashLoanUser();
-		int i = 1/0 ;
-
 
 		return new ResultBean(userList);
 	}
