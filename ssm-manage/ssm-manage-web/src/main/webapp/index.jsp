@@ -33,6 +33,7 @@
 <a href="/mq/receiveMq" target="_blank">接收mq消息</a><br>
 <a href="/exception/setExceptionList" target="_blank">制造一个异常</a><br>
 <a href="/exception/getExceptionList" target="_blank">异常页显示</a><br>
+<a href="/uploadFile/input-product" target="_blank">文件上传组件</a><br>
 
 </body>
 </html>
