@@ -33,7 +33,7 @@
 - [x] 参照[《编写 Spring 配置文件的13个最佳实践》](https://dev-cheats.com/java/best-practices-for-writing-spring-configuration-files.html)
 - [ ] 测试[NIO](http://ifeve.com/java-nio-all/)
 - [ ] 将 Evernote 中的常用组件迁移到项目中来
-- [ ] 定义一个全局异常类，出现异常走这个接口
+- [x] 定义一个全局异常类ExceptionResolver，出现异常走这个接口
 
 
 
