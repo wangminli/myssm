@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Decription:
+ * Decription:职能主要用来记录日志信息，异常交由ExceptionResolver处理
  * Created by WangMinli on 2017/12/21.
  */
 public class ControllerAOP {

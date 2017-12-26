@@ -90,4 +90,7 @@
         </aop:aspect>
     </aop:config>
     <!--aop config  end-->
+    <bean id="exceptionResolver" class="com.wml.system.ExceptionResolver"/>
+    <!-- 查看spring启动注册的bean -->
+    <bean class="com.wml.system.InstantiationTracingBeanPostProcessor" />
 </beans>
