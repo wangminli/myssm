@@ -35,6 +35,7 @@
 - [ ] 将 Evernote 中的常用组件迁移到项目中来
 - [x] 定义一个全局异常类ExceptionResolver，出现异常走这个接口
 - [x] 使用阿里巴巴的idea插件严格控制编码质量
+- [ ] 使用redis的sentinel管理缓存文件
 
 
 
