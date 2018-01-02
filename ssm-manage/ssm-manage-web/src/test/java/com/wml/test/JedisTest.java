@@ -1,9 +1,16 @@
 package com.wml.test;
 
 import org.junit.Test;
+import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+import redis.clients.jedis.JedisSentinelPool;
+
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Decription:
@@ -12,6 +19,7 @@ import redis.clients.jedis.JedisPoolConfig;
 public class JedisTest {
     private String ip = "23.83.247.149";
     private int port = 6379;
+    private static org.slf4j.Logger logger = LoggerFactory.getLogger(JedisTest.class);
     /**
      * 连接redis数据库
      */
@@ -76,6 +84,32 @@ public class JedisTest {
             if(jedisPool != null){
                 jedisPool.close();
             }
+        }
+    }
+
+    /**
+     * 使用sentinel测试jedis连接
+     */
+    @Test
+    public void testJedisSentinelPool(){
+        Set<String> sentinels = new HashSet<String>();
+        sentinels.add("23.83.247.149:26379");
+        sentinels.add("23.83.247.149:26380");
+        sentinels.add("23.83.247.149:26381");
+        JedisSentinelPool sentinelPool = new JedisSentinelPool("mymaster", sentinels);
+        Jedis jedis = null;
+        try {
+            jedis = sentinelPool.getResource();
+            int index = new Random().nextInt(10000);
+            String key = "k-" + index;
+            String value = "v-" + index;
+            jedis.set(key, value);
+            logger.info("{} value is {}", key, jedis.get(key));
+            TimeUnit.MILLISECONDS.sleep(100);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            jedis.close();
         }
     }
 }
