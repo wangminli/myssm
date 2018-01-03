@@ -36,6 +36,7 @@
 - [x] 定义一个全局异常类ExceptionResolver，出现异常走这个接口
 - [x] 使用阿里巴巴的idea插件严格控制编码质量
 - [ ] 使用redis的sentinel管理缓存文件
+- [ ] 使用binlog2sql这个第三方工具恢复误删除的文件
 
 
 
