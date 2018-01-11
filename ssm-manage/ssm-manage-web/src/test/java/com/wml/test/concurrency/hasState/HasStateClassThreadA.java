@@ -1,13 +1,13 @@
-package com.wml.test.highConcurrency.hasState;
+package com.wml.test.concurrency.hasState;
 
 /**
  * Decription:
  * Created by WangMinli on 2018/1/5.
  */
-public class HasStateClassThreadB extends Thread{
+public class HasStateClassThreadA extends Thread{
     private HasStateClass hasStateClass;
 
-    public HasStateClassThreadB(HasStateClass hasStateClass){
+    public HasStateClassThreadA(HasStateClass hasStateClass){
         super();
         this.hasStateClass = hasStateClass;
     }
@@ -15,6 +15,6 @@ public class HasStateClassThreadB extends Thread{
     @Override
     public void run(){
         super.run();
-        hasStateClass.addI("b");
+        hasStateClass.addI("a");
     }
 }

@@ -14,6 +14,8 @@ import javax.servlet.ServletContextListener;
  * @date 2017年2月16日 下午2:07:13
  */
 public class StartupListener extends ContextLoaderListener implements ServletContextListener {
+
+
 	public void contextInitialized(ServletContextEvent event) {
 		//super.contextInitialized(event);
 		ServletContext context = event.getServletContext();
@@ -21,5 +23,9 @@ public class StartupListener extends ContextLoaderListener implements ServletCon
 		ServiceLocator.setContext(ctx); // 初始化工具类ServiceLocator中的context
 		System.out.println("=========StartupListener init...=========");
 		//MapCacheManager.getInstance();  // 缓存
+
+		//ThreadPoolTaskExecutor taskExecutor = (ThreadPoolTaskExecutor)ServiceLocator.getBean("taskExecutor");
+
+
 	}
 }

@@ -1,4 +1,4 @@
-package com.wml.test.highConcurrency.hasState;
+package com.wml.test.concurrency.hasState;
 
 /** 测试有状态的类的非线程安全
  * Decription: 有状态的类，即有属性（静态变量）的类

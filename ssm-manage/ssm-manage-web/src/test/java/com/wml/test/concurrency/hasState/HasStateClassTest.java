@@ -1,4 +1,4 @@
-package com.wml.test.highConcurrency.hasState;
+package com.wml.test.concurrency.hasState;
 
 /**
  * Decription:
