@@ -38,6 +38,7 @@
 - [ ] 使用redis的sentinel管理缓存文件
 - [ ] 使用binlog2sql这个第三方工具恢复误删除的文件
 - [ ] 添加lomok注解器
+- [ ] 实战《Java 8 实战》中的核心知识点：lambda、函数式编程、Stream等技术。
 
 
 
